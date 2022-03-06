@@ -3,7 +3,7 @@
 #define _LIST_H
 
     #include<iostream>
-    const std::string WORD_LIST[] = {"angle", "ant", "apple", "arch", "arm", "army",
+    const std::string WORD_LIST_normal[] = {"angle", "ant", "apple", "arch", "arm", "army",
  "baby", "bag", "ball", "band", "basin", "basket", "bath", "bed", "bee", "bell", "berry",
  "bird", "blade", "board", "boat", "bone", "book", "boot", "bottle", "box", "boy",
  "brain", "brake", "branch", "brick", "bridge", "brush", "bucket", "bulb", "button",
@@ -28,6 +28,9 @@
  "toe", "tongue", "tooth", "town", "train", "tray", "tree", "trousers", "umbrella",
  "wall", "watch", "wheel", "whip", "whistle", "window", "wire", "wing", "worm",
  };
+
+ std::string WORD_LIST_hard[] =  { "implementation", "contiguous", "correspondence", "immutability", "comprehension", "instantiate"
+};
 
 const std::string FIGURE[] = {
  " ------------- \n"
@@ -89,7 +92,8 @@ const std::string FIGURE[] = {
 
 };
 
-const int total_words=sizeof(WORD_LIST)/sizeof(WORD_LIST[0]);
+const int total_words_normal=sizeof(WORD_LIST_normal) / sizeof(WORD_LIST_normal[0]);
+const int total_words_hard = sizeof(WORD_LIST_hard) / sizeof(WORD_LIST_hard[0]);
 
 
 #endif // _FUNC_H

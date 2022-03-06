@@ -2,6 +2,7 @@
 
 #include"list.h"
 #include"func.h"
+#include<windows.h>
 using namespace std;
 
 /*
@@ -20,6 +21,8 @@ void play()
 int main()
 {
    bool gameloop =false;
+   int counter = 60;
+
    while(!gameloop)
    {
        play();
